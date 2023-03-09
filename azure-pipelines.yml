@@ -34,3 +34,14 @@ steps:
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
+
+parameters:
+- name: image
+  displayName: Pool Image
+  type: string
+  default: ubuntu-latest
+  values:
+  - windows-latest
+  - ubuntu-latest
+  - macOS-latest
+
