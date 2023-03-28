@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 trigger:
-- main
+- feature_sample
 
 pool:
   vmImage: ubuntu-latest
@@ -40,7 +40,7 @@ schedules:
   displayName: Every Friday build
   branches:
     include:
-    - main
+    - feature_sample
 
 parameters:
 - name: image
