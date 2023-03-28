@@ -36,7 +36,7 @@ steps:
   displayName: 'pytest'
 
 schedules:
-- cron: '0 0 0 0 fri'
+- cron: '0 0 * * fri'
   displayName: Every Friday build
   branches:
     include:
