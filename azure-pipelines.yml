@@ -35,6 +35,13 @@ steps:
     pytest
   displayName: 'pytest'
 
+schedules:
+- cron: '0 0 0 0 Fri'
+  displayName: Every Friday build
+  branches:
+    include:
+    - main
+
 parameters:
 - name: image
   displayName: Pool Image
